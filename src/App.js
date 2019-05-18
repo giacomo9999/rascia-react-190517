@@ -1,8 +1,17 @@
 import React, { Component } from "react";
+import Table from "./Table";
+import TableHeader from "./TableHeader";
+// import './index.css';
 
 class App extends Component {
   render() {
-    return <h2>App</h2>;
+    return (
+      <div className="container">
+        <table>
+          <TableHeader />
+        </table>
+      </div>
+    );
   }
 }
 
