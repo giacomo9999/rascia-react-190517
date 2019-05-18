@@ -4,9 +4,14 @@ import Table from "./Table";
 
 class App extends Component {
   render() {
+    const characters = [
+      { name: "Jennifer", job: "Porn Star" },
+      { name: "Bob", job: "Data Analyst" },
+      { name: "Carlos", job: "Attorney-At-Law" }
+    ];
     return (
       <div className="container">
-        <Table />
+        <Table charData={characters} />
       </div>
     );
   }

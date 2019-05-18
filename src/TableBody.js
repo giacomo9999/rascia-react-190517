@@ -1,22 +1,15 @@
 import React from "react";
 
-const TableBody = () => {
-  return (
-    <tbody>
-      <tr>
-        <td>Jennifer</td>
-        <td>Porn Star</td>
+const TableBody = props => {
+  const rows = props.charData.map((row, index) => {
+    return (
+      <tr key={index}>
+        <td>{row.name}</td>
+        <td>{row.job}</td>
       </tr>
-      <tr>
-        <td>Bob</td>
-        <td>Data Analyst</td>
-      </tr>
-      <tr>
-        <td>Carlos</td>
-        <td>Attorney-At-Law</td>
-      </tr>
-    </tbody>
-  );
+    );
+  });
+  return <tbody>{rows}</tbody>;
 };
 
 export default TableBody;

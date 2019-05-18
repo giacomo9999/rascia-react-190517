@@ -4,10 +4,11 @@ import TableBody from "./TableBody";
 
 class Table extends Component {
   render() {
+    const { charData } = this.props;
     return (
       <table>
         <TableHeader />
-        <TableBody />
+        <TableBody charData={charData} />
       </table>
     );
   }
